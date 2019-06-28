@@ -1,0 +1,198 @@
+/* <style type="text/css"> */
+body {
+text-align: center;
+background-color: rgb(84, 150, 180);
+padding: 100px;
+padding-top: 10px;
+}
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size-adjust: 50px;
+   
+
+}
+nav li {
+    list-style: none;
+    padding: 1em 0;
+
+}
+nav li a {
+    color: rgb(176, 238, 238);
+    font-weight: 1000px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+    font: 1em sans-serif;
+}
+.content{
+    grid-area: content;
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: linear-gradient(to right,
+    rgb(84, 121, 190),
+    rgb(76, 172, 189),
+    rgb(36, 170, 119));
+    justify-content: center;
+}
+h1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-color:rgb(217, 245, 116);
+color: rgb(10, 121, 121);
+float: left;
+}
+h2 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(52, 156, 125);
+background-color: rgb(13, 80, 52);
+}
+.svgClass {
+background-color:rgb(148, 191, 248);
+float:left;
+width:70%;
+color:#fff;
+padding:10px;
+box-sizing:border-box;
+}
+
+polygon{
+fill:white; 
+transition: 1s fill;
+}
+
+polygon:hover {
+fill: rgb(250, 214, 214);
+}
+
+.lideta { 
+    stroke:yellow;
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(128, 17, 72);
+    fill-opacity: 50%;
+}
+
+.kirkos{
+    stroke:greenyellow;
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(48, 212, 185);
+    fill-opacity: 10%;}
+.nifas-silk{
+    stroke:rgb(169, 218, 36);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(213, 228, 146); 
+    fill-opacity: 50%;
+}
+
+.akaki-kaliti {
+    stroke:rgb(153, 36, 143);
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(42, 23, 59);
+    fill-opacity: 10%;
+}
+
+.yeka{
+    stroke:rgb(148, 106, 16);
+    stroke-width: 2px;
+    stroke-dasharray: 3;
+    fill:rgb(205, 247, 127);
+    fill-opacity: 10%;
+}
+
+.bole{
+    stroke:green;
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(116, 14, 14); 
+    fill-opacity: 10%;
+}
+
+.kolfe-keraniyo{
+    stroke: khaki;
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(177, 128, 241); 
+    fill-opacity: 50%;
+}
+
+.addis-ketema{
+    stroke:palegoldenrod;
+    stroke-width: 2px;
+    stroke-dasharray: 3;
+    fill:rgb(240, 205, 108);
+    fill-opacity: 50%;
+}
+
+.arada{stroke:peru;
+    stroke-width: 2px;
+    stroke-dasharray: 3; 
+    fill:rgb(54, 58, 114); 
+    fill-opacity: 50%;
+}
+
+.gulele{
+    stroke:orange;
+    stroke-width: 2px; 
+    stroke-dasharray: 3; 
+    fill:rgb(69, 87, 7);
+    fill-opacity: 50%;
+}
+.removed{
+display: none;
+}
+button{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    background:gray;
+    border:none;
+    outline: none;
+    left: 0%;
+    width: 260px;
+    text-align: left;
+}
+#button:hover{
+    fill: rgb(221, 83, 83);
+}
+#sidebar{
+    text-align: left;
+    float:right;
+    width:30%;
+    background:none;
+    color:#fff;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+
+
+@media (min-width: 1040 px){
+    .container {
+        grid-template-areas:
+            "sidebar content"
+            "sidebar footer";
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 1fr auto;
+    }
+     nav ul {
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+
+     }
+     .sidebar {
+         background: linear-gradient(
+             rgba(249,187,142,1),
+             rgba(218,183,230,1),
+             rgba(138,125,254,1));
+             padding-top: 3em;

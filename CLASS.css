@@ -1,0 +1,42 @@
+body {
+text-align: center;
+background-color: rgb(84, 150, 180);
+padding: 100px;
+padding-top: 10px;
+}
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size-adjust: 50px;
+   
+
+}
+nav li {
+    list-style: none;
+    padding: 1em 0;
+
+}
+nav li a {
+    color: rgb(176, 238, 238);
+    font-weight: 1000px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+    font: 1em sans-serif;
+}
+.content{
+    grid-area: content;
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: linear-gradient(to right,
+    rgb(84, 121, 190),
+    rgb(76, 172, 189),
+    rgb(36, 170, 119));
+    justify-content: center;
